@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+ 
+<body>
+    
+    <h1 class="flex_container">
+        My Artwork Portfolio:
+    </h1>
+
+    <div class="flex_container">
+        <img src="{% static 'cat.jpg' %}" alt="A drawing of a cat." class="img_border hover_effect">
+        <img src="{% static 'person.jpg' %}" alt="A drawing of a person." class="img_border hover_effect">
+        <img src="{% static 'fish.jpg' %}" alt="A drawing of a fish." class="img_border hover_effect">
+    </div>
+    
+
+</body>
+
+</html>
